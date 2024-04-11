@@ -8,13 +8,6 @@ interface ButtonProps {
   appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
-  return (
-    <button
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
-    >
-      {children}
-    </button>
-  );
+export const Button = ({ name }: any) => {
+  return <button className="bg-white">Hello there {name}</button>;
 };
