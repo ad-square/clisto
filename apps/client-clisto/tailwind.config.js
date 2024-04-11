@@ -10,7 +10,11 @@ module.exports = {
     "../../packages/ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        58: "15rem",
+      },
+    },
   },
   plugins: [],
 };
